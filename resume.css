@@ -45,33 +45,33 @@ h1 {
 	background: 0;
 	background-size: 100% auto;
 	background-position: bottom left;
-	width: 33%;
-	position: relative;
+	width: 10%;
+	position: absolute;
+	bottom: 2%;
+	left: 11%;
 	border: 0;
-  padding-left: 11%;
-  padding-right: 11%;
 }
 
 #knowledge {
 	background: 0;
 	background-size: 100% auto;
 	background-position: bottom left;
-	width: 33%;
-	position: relative;
+	width: 10%;
+	position: absolute;
+	bottom: 2%;
+	left: 43%;
 	border: 0;
-  padding-left: 11%;
-  padding-right: 11%;
 }
 
 #work {
 	background: 0;
 	background-size: 100% auto;
 	background-position: bottom left;
-	width: 33%;
-	position: relative;
+	width: 10%;
+	position: absolute;
+	bottom: 2%;
+	left: 75%;
 	border: 0;
-  padding-left: 11%;
-  padding-right: 11%;
 }
 
 #fadein img:nth-child(1) {
@@ -138,6 +138,8 @@ h1 {
   padding-top: 2%;
   padding-left: 10px;
   padding-right: 10px;
+  position: absolute;
+  top: 100%;
   display: none;
 }
 
@@ -145,6 +147,8 @@ h1 {
   padding-top: 2%;
   padding-left: 10px;
   padding-right: 10px;
+  position: absolute;
+  top: 100%;
   display: none;
 }
 
@@ -152,6 +156,8 @@ h1 {
   padding-top: 2%;
   padding-left: 10px;
   padding-right: 10px;
+  position: absolute;
+  top: 100%;
   display: none;
 }
 
