@@ -1,0 +1,240 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 36%;
+  color: #5a5a5a;
+}
+
+h1 {
+	color: #65d9f2;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f265c8;
+}
+
+#aquarium {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: red;
+  padding-bottom: 20%;
+	display: inline block;
+}
+
+#study {
+	background: 0;
+	background-size: 100% auto;
+	background-position: bottom left;
+	width: 33%;
+	position: relative;
+	border: 0;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+#knowledge {
+	background: 0;
+	background-size: 100% auto;
+	background-position: bottom left;
+	width: 33%;
+	position: relative;
+	border: 0;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+#work {
+	background: 0;
+	background-size: 100% auto;
+	background-position: bottom left;
+	width: 33%;
+	position: relative;
+	border: 0;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+#fadein img:nth-child(1) {
+	animation-delay: 7s;
+}
+
+#fadein img:nth-child(2) {
+	animation-delay: 14s;
+}
+
+#fadein img:nth-child(3) {
+	animation-delay: 21s;
+}
+
+#fadein {
+	height: 100%;
+	width: 100%;
+	font-size: 0; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: no-repeat url(images/bg.png) 0 0;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#fadein img{
+	width: 98%;
+	height: 98%;
+	opacity: 0;
+	position: absolute;
+	top: 1%;
+	bottom: 1%;
+	left: 1%;
+	right: 1%;
+	animation: trainmove 28s infinite forwards;
+	-webkit-animation: trainmove 28s infinite forwards;
+}
+
+@keyframes trainmove {
+	0% { opacity: 0;}
+	22% { opacity: 1;}
+	44% { opacity: 1;}
+	66% { opacity: 1;}
+	88% { opacity: 1;}
+	100% { opacity:0;}
+}
+
+@-webkit-keyframes trainmove
+{	0% { opacity: 0;}
+	22% { opacity: 1;}
+	44% { opacity: 1;}
+	66% { opacity: 1;}
+	88% { opacity: 1;}
+	100% { opacity:0;}
+
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing1 {
+  padding-top: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+.marketing2 {
+  padding-top: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+.marketing3 {
+  padding-top: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing1 h2 {
+  font-weight: normal;
+}
+.marketing2 h2 {
+  font-weight: normal;
+}
+.marketing3 h2 {
+  font-weight: normal;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 1% 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .marketing2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .marketing3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-left:  15px;
+    padding-right: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-left:  0;
+    padding-right: 0;
+  }
+
+  body {
+  padding-top: 100%;
+  color: #5a5a5a;
+}
+  
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 20px;
+  }
+}
